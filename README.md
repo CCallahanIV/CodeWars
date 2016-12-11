@@ -10,9 +10,9 @@ Sum of the nth term of Series
 BEGIN SNOW DAY:
 
 1. Highest and Lowest
-- Module: high_low.py
-- Tests: test_high_low.py
-- Link: https://www.codewars.com/kata/highest-and-lowest/train/python
+  - Module: high_low.py
+  - Tests: test_high_low.py
+  - Link: https://www.codewars.com/kata/highest-and-lowest/train/python
 
 ```
 python
@@ -24,9 +24,9 @@ def high_and_low(numbers):
 ```
 
 2. Array.Diff
-- Module: array_diff.py
-- Tests: test_array_diff.py
-- Link: https://www.codewars.com/kata/array-dot-diff/train/python
+  - Module: array_diff.py
+  - Tests: test_array_diff.py
+  - Link: https://www.codewars.com/kata/array-dot-diff/train/python
 
 ```
 python
@@ -36,9 +36,9 @@ def array_diff(a, b):
 ```
 
 3. Recursive Reverse String
-- Module: reverse.py
-- Tests: test_reverse.py
-- Link: https://www.codewars.com/kata/recursive-reverse-string/train/python
+  - Module: reverse.py
+  - Tests: test_reverse.py
+  - Link: https://www.codewars.com/kata/recursive-reverse-string/train/python
 NOTE: Testing requires that the recursive function is called recursively n times if n
 is the length of the string.  I can complete the task with n + 1 recursive calls.
 I would like help to figure out how to get it down to n.
@@ -51,10 +51,10 @@ def reverse(str):
 ```
 
 4. Flatten Me
-- Module: flatten.py
-- Tests: test_flatten.py
-- Link: https://www.codewars.com/kata/flatten-me/train/python
-- was close to answer, this helped:
+  - Module: flatten.py
+  - Tests: test_flatten.py
+  - Link: https://www.codewars.com/kata/flatten-me/train/python
+  - was close to answer, this helped:
 http://stackoverflow.com/questions/952914/making-a-flat-list-out-of-list-of-lists-in-python
 
 ```
@@ -71,9 +71,9 @@ def flatten_me(lst):
 ```
 
 5. Equal Sides of an Array
-- module: equal_sides.py
-- tests: test_equal_sides.py
-- Link:https://www.codewars.com/kata/equal-sides-of-an-array/train/python
+  - module: equal_sides.py
+  - tests: test_equal_sides.py
+  - Link:https://www.codewars.com/kata/equal-sides-of-an-array/train/python
 ```
 python
 def find_even_index(arr):
@@ -89,9 +89,9 @@ def find_even_index(arr):
 ```
 
 6. List Filtering
-- module: filter_list.py
-- tests: test_filter_list.py
-- Link:https://www.codewars.com/kata/list-filtering/train/python
+  - module: filter_list.py
+  - tests: test_filter_list.py
+  - Link:https://www.codewars.com/kata/list-filtering/train/python
 ```
 python
 def filter_list(l):
@@ -99,9 +99,9 @@ def filter_list(l):
 ```
 
 7. Show Multiples
-- module: show_multipes.py
-- tests: test_show_multiples.py
-- link: https://www.codewars.com/kata/show-multiples-of-2-numbers-within-a-range/train/python
+  - module: show_multipes.py
+  - tests: test_show_multiples.py
+  - link: https://www.codewars.com/kata/show-multiples-of-2-numbers-within-a-range/train/python
 ```
 python
 def multiples(s1,s2,s3):
@@ -110,9 +110,9 @@ def multiples(s1,s2,s3):
 ```
 
 8. Jaden Casing
-- module: jaden_casing.py
-- tests: test_jaden_casing.py
-- links: https://www.codewars.com/kata/jaden-casing-strings/train/python
+  - module: jaden_casing.py
+  - tests: test_jaden_casing.py
+  - links: https://www.codewars.com/kata/jaden-casing-strings/train/python
 
 ```
 python
