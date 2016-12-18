@@ -2,12 +2,20 @@
 
 This repo contains all kata's completed from the Code Wars website
 
-Sum of the nth term of Series
-- Module: sum_nth_terms.py
-- Tests: test_sum_nth_terms.py
-- Link: https://www.codewars.com/kata/555eded1ad94b00403000071
+#Sum of the nth term of Series
+ - Module: sum_nth_terms.py
+ - Tests: test_sum_nth_terms.py
+ - Link: https://www.codewars.com/kata/555eded1ad94b00403000071
 
-BEGIN SNOW DAY:
+#Proper Parenthetics
+ - Module: proper_parenthetics.py
+ - Tests: test_paranthetics.py
+ - Dependencies: dbl_linked_list.py and queue.py
+ - Link: https://codefellows.github.io/sea-python-401d5/assignments/proper_parenthetics.html
+ - A requirement for solving this problem was using a data structure that we had built.  I elected to use a queue because of its FIRST IN FIRST OUT access to data.  This way, I was able to read the given strings "left to right."
+ 
+
+#BEGIN SNOW DAY:
 
 1. Highest and Lowest
   - Module: high_low.py
