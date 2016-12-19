@@ -23,7 +23,4 @@ def proper_parenthetics(test_str):
         elif char == ')':
             num_closing += 1
 
-    if num_opening > num_closing:
-        return 1
-    else:
-        return 0
+    return 1 if num_opening > num_closing else 0
