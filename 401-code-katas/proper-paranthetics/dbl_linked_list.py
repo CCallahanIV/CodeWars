@@ -1,7 +1,16 @@
-"""Create a Double Linked List Data Structure."""
+"""Create a Double Linked List Data Structure. A doubly linked list is a
+linked data structure that consists of a set of sequentially linked records
+called nodes. Each node contains two fields, called links, that are references
+to the previous and to the next node in the sequence of nodes. The beginning and
+ending nodes' previous and next links, respectively, point to some kind of
+terminator, typically a sentinel node or null, to facilitate traversal of the
+list.
+
+Taken from https://en.wikipedia.org/wiki/Doubly_linked_list"""
 
 
-class Dbl_Node(object):
+class DblNode(object):
+
     """Create Node objects for use in a Linked List data structure.
 
     Attributes:
@@ -17,7 +26,8 @@ class Dbl_Node(object):
         self.prev = prev
 
 
-class Dbl_Linked_List(object):
+class DblLinkedList(object):
+
     """Double Linked List (DLL) style Data Structure.
 
     If initialized with an iterable, will create nodes for each item in
@@ -53,14 +63,12 @@ class Dbl_Linked_List(object):
             try:
                 for value in maybe_an_iterable:
                     self.push(value)
-                nodes = [node for node in self._iterate_from(self.head)]
-                self.tail = nodes[-1]
             except TypeError:
                 self.push(maybe_an_iterable)
 
     def push(self, value):
         """Add a node at the beginning of list and reassign head."""
-        new = Dbl_Node(value)
+        new = DblNode(value)
         if self._size > 0:
             old = self.head
             self.head = new
@@ -89,7 +97,7 @@ class Dbl_Linked_List(object):
         """Remove tail node from DLL and return its value."""
         if self.tail is None:
             raise IndexError("Cannot shift from an empty Double Linked List.")
-        val = self.head.value
+        val = self.tail.value
         if self._size == 1:
             self.head = None
             self.tail = None
@@ -101,7 +109,7 @@ class Dbl_Linked_List(object):
 
     def append(self, value):
         """Append a new node at the end of list and reassign tail."""
-        new = Dbl_Node(value)
+        new = DblNode(value)
         if self._size > 0:
             old = self.tail
             self.tail = new
@@ -116,20 +124,20 @@ class Dbl_Linked_List(object):
         """Remove the given node from the DLL."""
         r_node = [node for node in self._iterate_from(self.head) if node.value == value]
         if not r_node:
-            raise ValueError("ERROR: That node is not in this linked list.")
+            return ValueError
         for node in self._iterate_from(self.head):
             if r_node[0].value == node.value:
                 if self.head.value == r_node[0].value:
                     self.pop()
-                    return "Succesfully removed Node with value: {0}. New head set to {1}".format(r_node[0].value, self.head.value)
+                    return "Succesfully removed Node with value: {0}. New head set to {1}, new size is {2}".format(r_node[0].value, self.head.value, self._size)
                 elif node.nxt is None:
                     self.shift()
-                    return "Succesfully removed Node with value: {} using Shift()".format(r_node[0].value)
+                    return "Succesfully removed Node with value: {0}. New tail set to {1}, new size is {2}".format(r_node[0].value, self.tail.value, self._size)
                 else:
                     r_node[0].prev.nxt = r_node[0].nxt
                     r_node[0].nxt.prev = r_node[0].prev
                     self._size -= 1
-                    return "Succesfully removed Node with value: {}".format(r_node[0].value)
+                    return "Succesfully removed Node with value: {0}. {1} points now to {2} and {3} to {4}, new size is {5}".format(r_node[0].value, r_node[0].prev.value, r_node[0].prev.nxt.value, r_node[0].nxt.value, r_node[0].nxt.prev.value, len(self))
 
     def _iterate_from(self, list_item):
         """Return a generator."""
