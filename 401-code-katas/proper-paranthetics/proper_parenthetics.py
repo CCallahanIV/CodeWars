@@ -1,11 +1,15 @@
 """This module contains the solution for the CF 401 Proper Parenthetics assignment."""
 
 from queue import Queue
+import sys
 
 
 def proper_parenthetics(test_str):
     """Test for proper parenthetics in a given string."""
-    q = Queue(test_str)
+    if sys.version_info[0] < 3:
+        q = Queue(list(test_str))
+    else:
+        q = Queue(test_str)
 
     num_opening = 0
     num_closing = 0
