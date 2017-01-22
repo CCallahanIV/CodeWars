@@ -2,6 +2,13 @@
 
 This repo contains all kata's completed from the Code Wars website
 
+
+#Card Sort
+ - Modules: binheap_pq.py, card_sort.py
+ - Tests: test_card_sort.py
+ - Link: https://www.codewars.com/kata/sort-deck-of-cards/python
+ - The stretch goal for this kata was to use a Priority Queue Data Structure in order to solve it.  I did so by creating a reference dictionary of all the cards and their relative priorities.  Each card was pushed into the PQ and heap sorted by its priority.  Once all were inserted, they could all be popped into a list in sorted order to return.
+
 #Sum of the nth term of Series
  - Module: sum_nth_terms.py
  - Tests: test_sum_nth_terms.py
