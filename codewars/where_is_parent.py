@@ -30,9 +30,9 @@ def find_children(families):
 
     for char in families:
         if char.istitle():
-            families_dict[char].setdefault(char, 0)
+            families_dict.setdefault(char, 0)
         else:
-            families_dict[char.upper()] = families_dict[char.upper()].setdefault(char.upper(), 0) + 1
+            families_dict[char.upper()] = families_dict.setdefault(char.upper(), 0) + 1
 
     found_families = []
     for parent, children in families_dict.items():

@@ -7,8 +7,8 @@ TEST_PARAMS = [
     ("CbcBcbaA", "AaBbbCcc"),
     ("xXfuUuuF", "FfUuuuXx"),
     ("", ""),
-    # ("ABbb", "ABbb"),
-    # ('soZqoUrlkvnzFkflEinAwlWKzrqxixszisLewammvnoQwmnSlRgoriYxNGmvgwzMJoxVlzXzfiOmzlfiHixmyIxwgyi', 'AaEeFfffGgggHIiiiiiiiiJKkkLllllllMmmmmmmNnnnnOoooooQqqRrrrSsssUVvvvWwwwwwXxxxxxxYyyZzzzzzzz')
+    ("ABbb", "ABbb"),
+    ('soZqoUrlkvnzFkflEinAwlWKzrqxixszisLewammvnoQwmnSlRgoriYxNGmvgwzMJoxVlzXzfiOmzlfiHixmyIxwgyi', 'AaEeFfffGgggHIiiiiiiiiJKkkLllllllMmmmmmmNnnnnOoooooQqqRrrrSsssUVvvvWwwwwwXxxxxxxYyyZzzzzzzz')
 ]
 
 
